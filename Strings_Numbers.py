@@ -1,8 +1,7 @@
 import random
 
-
 #################################
-#Playing with String
+# Playing with String
 print('+'*33)
 #################################
 
@@ -15,7 +14,7 @@ print("Age : " + str(age))
 
 
 #################################
-#Playing with String
+# Playing with String
 print('*'*33)
 #################################
 
@@ -28,8 +27,19 @@ gender = "Male"
 print("Age : {} ".format(age))
 print("Age : {}, Gender : {} ".format(age, gender))
 
+#################################
+# Playing with String
+print('#'*33)
+#################################
+
+'''
+    Find Word Count from Text
+'''
+text = "Lorem Ipsum damit lamor"
+count = len(text.split(" "))
+print(count)
 
 #################################
-#Playing with String
+# Playing with String
 print('#'*33)
 #################################
