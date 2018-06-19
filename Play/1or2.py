@@ -24,9 +24,6 @@ while True:
 
     randomNumber = random.randint(1, 2)
 
-    bet = input("Your Bet ? : ")
-    bet = int(bet)
-
     answer = input("Your Chooise ? : ")
     answer = int(answer)
 
