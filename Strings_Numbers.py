@@ -27,7 +27,6 @@ gender = "Male"
 print("Age : {} ".format(age))
 print("Age : {}, Gender : {} ".format(age, gender))
 
-#################################
 # Playing with String
 print('#'*33)
 #################################
@@ -42,4 +41,5 @@ print(count)
 #################################
 # Playing with String
 print('#'*33)
+#################################
 #################################
