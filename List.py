@@ -73,3 +73,32 @@ print('*'*33)
 #################################
 
 
+'''
+
+    Diffrent Action with List and List elements
+'''
+#add new list items with plus
+students = ["Domonique Brittingham", "Marjorie Ruddy", "Janelle Rodenberger", "Jarvis Flenniken", "Maddie Batchelor", "Priscila Weisgerber", "Zetta Lorenz", "Dorcas Daniel"] + ["Max Mustermann"]
+
+#remove item
+students.remove('Max Mustermann')
+
+# get items between 2 and 4
+print(students[2:4])
+
+#List Comprehensions
+xs = [1, 2, 3, 4, 5, 6, 7, 8]
+ys = [k + k for k in xs]
+
+print(xs)
+print(ys)
+
+
+
+
+
+
+
+
+
+
