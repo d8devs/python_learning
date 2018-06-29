@@ -26,7 +26,4 @@ with open("../csv/us-500.csv", "r") as file:
         if max_count < nameAndHitDict[row]:
             max_count = nameAndHitDict[row]
 
-
-
-
-
+    print("Count from Populer Name: " + str(max_count))
