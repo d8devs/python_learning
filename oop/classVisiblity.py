@@ -79,3 +79,44 @@ print(d8devs.getTerm())
 
 
 
+'''
+    Create Class and Methods with Private Visibility
+'''
+class Student():
+    def __init__(self, name, lastname):
+        self.name = name
+        self.lastname = lastname
+        # here is private Method for default value writing.
+        self.__setTerm()
+
+    def getInformation(self):
+        # add term variable
+        print(self.name + "" + self.lastname + "(Semester " + str(self.__term) + ")")
+
+    def increase_term(self):
+        if(self.__term >= 3):
+            return
+        self.__term = self.__term + 1
+
+    def getTerm(self):
+        return  self.__term
+
+    # here is our private method
+    def __setTerm(self):
+        self.__term = 1
+
+
+# Create Student
+d8devs = Student("D8", "Devs")
+d8devs.getInformation()
+'''
+but setTerm method not visible outside from Class. Remove "#" Comment from line, if you this testing!
+'''
+#d8devs.__setTerm()
+''' 
+    d8devs.__setTerm()
+D8Devs(Semester 1)
+AttributeError: 'Student' object has no attribute '__setTerm'
+'''
+
+
