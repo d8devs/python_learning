@@ -24,3 +24,21 @@ print(erbakan.name)
 print(erbakan.lastname)
 print(karamollaoglu.name)
 print(karamollaoglu.lastname)
+
+
+'''
+    Create Class with Constructor and Methods
+'''
+
+class Student():
+    def __init__(self, name, lastname):
+        self.name = name
+        self.lastname = lastname
+
+    def getFullname(self):
+        print(self.name + "" + self.lastname)
+
+# Create a Student using Constructor
+koray = Student("d8", "devs")
+# run Class method
+koray.getFullname()
