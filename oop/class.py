@@ -69,4 +69,5 @@ koray = Student("d8", "devs")
 koray.getFullname()
 # update this student semester with good solution/oop best practice way
 koray.increase_term()
+# get this student semester
 koray.getFullname()
