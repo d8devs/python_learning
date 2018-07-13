@@ -1,5 +1,3 @@
-from newModuleUnderDirectory import MakeSomething
+from newModuleUnderDirectory import *
 
 MakeSomething.make()
-
-
