@@ -1,3 +1,3 @@
-from newModuleUnderDirectory import *
+import newModuleUnderDirectory
 
-MakeSomething.make()
+newModuleUnderDirectory.MakeSomething.make()
