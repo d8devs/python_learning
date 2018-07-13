@@ -49,3 +49,19 @@ if isinstance(normalStudent, WorkingStudent):
     print("True")
 else:
     print("False")
+
+
+
+# Get Working Studdent List
+
+students = [
+    WorkingStudent("Children", "Killer Camaroon", "Killer CO."),
+    WorkingStudent("Children", "Killer Camaroon 2", "Killer CO."),
+    Student("Children", "Killer Camaroon Army 3"),
+    Student("Children", "Killer Camaroon Army 4")
+]
+
+print("WORKING STUDENTS LIST: ")
+for student in students:
+    if type(student) == WorkingStudent:
+        print(student.name())
