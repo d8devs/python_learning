@@ -9,7 +9,7 @@ removeCharacterList = {
 
 max_count = 0
 
-with open("../csv/us-500.csv", "r") as file:
+with open("../dummy/csv/dummy.csv", "r") as file:
     for line in file:
         column_value = line.strip().split('"')
         name = column_value[1]

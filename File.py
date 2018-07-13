@@ -6,7 +6,7 @@ print('*'*33)
 '''
     File Open and read line by line
 '''
-file = open("Example.txt", "r")
+file = open("dummy/txt/dummy.txt", "r")
 for line in file:
     # strip remove the new line string from line "\n"
     print(line.strip())
@@ -26,7 +26,7 @@ print('*'*33)
     File open and write
 '''
 
-writeFile = open("Example.txt", "w")
+writeFile = open("dummy/txt/dummy.txt", "w")
 
 writeFile.write("Sed efficitur sagittis elit, sit amet scelerisque lectus fringilla eget.\n ")
 writeFile.write("Interdum et malesuada fames ac ante ipsum primis in faucibus.\n")
@@ -45,7 +45,7 @@ print('*'*33)
 '''
     File open and Append
 '''
-getFile = open("Example.txt", "a")
+getFile = open("dummy/txt/dummy.txt", "a")
 getFile.write("ADD THIS LINE AFTER THE END OF FILE")
 getFile.close()
 
@@ -57,8 +57,10 @@ print('*'*33)
 '''
     Close Automatic File if any error has
 '''
+def makeSomething():
+    pass
 
-with open('Example.txt', 'r') as file:
+with open('dummy/txt/dummy.txt', 'r') as file:
     for line in file:
         # This function not created, that >>>with<<< tag from  >>>with open("Example"...<<< mean close file if this action error has
         makeSomething()
@@ -73,6 +75,6 @@ print('*'*33)
     File Close    
 '''
 
-openFile = open("Example.txt", "r")
+openFile = open("dummy/txt/dummy.txt", "r")
 # WORK IS HERE or something
 openFile.close()
